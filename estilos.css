@@ -1,0 +1,91 @@
+header {
+  text-align: center;
+}
+
+h1 {
+  color: #000;
+}
+
+h2 {
+  color: rgb(231, 164, 77);
+}
+
+p {
+  color: #2b2a2a;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('https://st.depositphotos.com/1695227/2370/v/950/depositphotos_23707743-stock-illustration-vintage-elegant-restaurant-menu-card.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Contenedor del Menú */
+.menu {
+  max-width: 85%;
+  background-color: rgb(247, 219, 181);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.315);
+  padding: 20px;
+}
+
+/* Secciones */
+.menu-section ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-section li {
+  padding: 10px;
+  border: 1px solid #00000062;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgb(238, 205, 162);
+}
+
+/* Contenedor de cada plato */
+.menu-item {
+  display: flex;
+  align-items: center; /* Alineo el texto al centro del contenedor */
+}
+
+/* Imagen del plato */
+.menu-item img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+/* Contenedor de los detalles del plato */
+.menu-item-details {
+  display: flex;
+  flex-direction: column; /* Para poner cada elemento en una línea diferente */
+}
+
+/* Estilos de texto */
+.menu-item-details h3 {
+  font-size: 18px;
+  color: #000;
+  margin: 0;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.price {
+  font-size: 15px;
+  color: #000000;
+  font-weight: bold;
+  margin-top: 8px;
+}
